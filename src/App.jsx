@@ -1,6 +1,7 @@
 import GridBoard from "./components/GridBoard/GridBoard";
 import GridSquare from "./components/GridSquare/GridSquare";
 import NextBlock from "./components/NextBlock/NextBlock";
+import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       {/* <GridSquare color="1" /> */}
       <GridBoard />
       <NextBlock />
+      <ScoreBoard />
     </div>
   );
 }
