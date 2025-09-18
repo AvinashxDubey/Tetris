@@ -1,3 +1,4 @@
+import GridBoard from "./components/GridBoard/GridBoard";
 import GridSquare from "./components/GridSquare/GridSquare";
 
 const App = () => {
@@ -6,7 +7,8 @@ const App = () => {
       <header className="App-header">
         <h1 className="App-title">Tetris Redux</h1>
       </header>
-      <GridSquare color="1" />
+      {/* <GridSquare color="1" /> */}
+      <GridBoard />
     </div>
   );
 }
