@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #f5ecb5;
+  --bg-color: #d8c446;
   --color-text: #ffffff;
-  --body-bg-color: #a19f98;
+  --body-bg-color: #eed061;
   --app-bg-color: #8e4f4f;
 
   /* border color of squares */
@@ -56,10 +56,30 @@ body {
   background-color: var(--body-bg-color);
 }
 
+.App {
+  --col-side: calc(var(--tile-size) * 4);
+  --col-center: calc(var(--tile-size) * 10);
+  --grid-height: calc(var(--tile-size) * 18);
+
+  width: calc(var(--tile-size) * (4 + 1 + 10 + 1 + 4));
+  margin: auto;
+  display: grid;
+
+  grid-gap: var(--tile-size) var(--tile-size);
+  grid-template-columns: var(--col-side) var(--col-center) var(--col-side);
+  grid-template-rows: 100px var(--grid-height) 100px;
+
+  grid-template-areas: "h h h"
+                       "l c r"
+                       ". b .";
+}
+
 .App-header {
   background-color: var(--app-bg-color);
   min-height: 10vh;
   width: 100%;
+
+  grid-area: h;
 
   display: flex;
   flex-direction: column;

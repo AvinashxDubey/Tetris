@@ -1,4 +1,7 @@
-.score-board-button {
+.score-board {
+  grid-area: r;
+}
+.scoreboard-btn {
   display: block;
   padding: 1em;
   border-width: 5px;

@@ -1,3 +1,5 @@
+import './ScoreBoard.css'
+
 const ScoreBoard = (props) => {
     return (
         <div className="score-board">
