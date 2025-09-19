@@ -1,6 +1,7 @@
 import Controls from "./components/Controls/Controls";
 import GridBoard from "./components/GridBoard/GridBoard";
 import GridSquare from "./components/GridSquare/GridSquare";
+import MessagePopup from "./components/MessagePopup/MessagePopup";
 import NextBlock from "./components/NextBlock/NextBlock";
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 
@@ -15,6 +16,7 @@ const App = () => {
       <NextBlock />
       <ScoreBoard />
       <Controls />
+      <MessagePopup />
     </div>
   );
 }
