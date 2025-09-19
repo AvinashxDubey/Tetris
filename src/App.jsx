@@ -1,6 +1,5 @@
 import Controls from "./components/Controls/Controls";
 import GridBoard from "./components/GridBoard/GridBoard";
-import GridSquare from "./components/GridSquare/GridSquare";
 import MessagePopup from "./components/MessagePopup/MessagePopup";
 import NextBlock from "./components/NextBlock/NextBlock";
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
@@ -11,7 +10,6 @@ const App = () => {
       <header className="App-header">
         <h1 className="App-title">Tetris Redux</h1>
       </header>
-      {/* <GridSquare color="1" /> */}
       <GridBoard />
       <NextBlock />
       <ScoreBoard />

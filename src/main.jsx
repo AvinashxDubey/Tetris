@@ -3,8 +3,16 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+import { configureStore } from "@reduxjs/toolkit";
+import reducer from "./reducers";
+import { Provider } from 'react-redux';
+
+const store = configureStore({ reducer });
+
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <Provider store={store}>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </Provider>
 )
