@@ -26,6 +26,7 @@
   --button-color-b: rgba(120, 120, 120, 1);
   --button-color-l: rgba(222, 222, 222, 1);
 
+  /* Grid and border-w */
   --cols: 10;
   --rows: 18;
   --tile-size: 20px;
